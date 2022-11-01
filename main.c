@@ -5,20 +5,15 @@
 
 int main(int argc, char *argv[]) {
 	
-	int g[5];
-	
-	g[0]=10;
-	g[1]=20;
-	g[2]=30;
-	g[3]=40;
-	g[4]=50;
-	
 	int i;
+	int g[5];
+	printf("5명의 점수를 입력하세요.\n");
 	
 	for(i=0;i<5;i++)
-	printf("g[%d]=%d\n",i,g[i]);
-	    
-	
+	   scanf("%d",&g[i]);
+	   
+	for(i=0;i<5;i++)
+	    printf("g[%d] = %d\n",i,g[i]);
 	
 	return 0;
 }

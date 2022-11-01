@@ -16,7 +16,7 @@ for(i=0;i<SIZE;i++)
    s[i]=g[i];
 
 for(i=0;i<SIZE;i++)
-    printf("s[%d]=%d\n",i,s[i]);
+    printf("s[%d]=%d(%d)\n",i,s[i],g[i]);
 	   
 	return 0;
 }

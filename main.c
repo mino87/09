@@ -5,15 +5,19 @@
 
 int main(int argc, char *argv[]) {
 	
-	int i;
+	int i,avg;
 	int g[5];
-	printf("5명의 점수를 입력하세요.\n");
+	int sum=0;
 	
 	for(i=0;i<5;i++)
-	   scanf("%d",&g[i]);
-	   
-	for(i=0;i<5;i++)
-	    printf("g[%d] = %d\n",i,g[i]);
-	
+	{
+	printf("학생성적을 입력하세요.:\n");
+	scanf("%d",&g[i]);
+	sum+=g[i];
+	}
+	    
+    avg = sum/5;
+    printf("성적평균 : %d\n",avg);
+    
 	return 0;
 }
